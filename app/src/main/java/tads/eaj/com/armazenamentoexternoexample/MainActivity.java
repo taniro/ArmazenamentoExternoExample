@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inputText = (EditText) findViewById(R.id.myInputText);
-        response = (TextView) findViewById(R.id.response);
+        inputText = findViewById(R.id.myInputText);
+        response = findViewById(R.id.response);
 
 
-        saveButton1 = (Button) findViewById(R.id.saveExternalStorage);
+        saveButton1 = findViewById(R.id.saveExternalStorage);
         saveButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        readButton1 = (Button) findViewById(R.id.getExternalStorage);
+        readButton1 = findViewById(R.id.getExternalStorage);
         readButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        saveButton2 = (Button) findViewById(R.id.saveExternalStoragePublic);
+        saveButton2 =  findViewById(R.id.saveExternalStoragePublic);
         saveButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        readButton2 = (Button) findViewById(R.id.getExternalStoragePublic);
+        readButton2 =  findViewById(R.id.getExternalStoragePublic);
         readButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
